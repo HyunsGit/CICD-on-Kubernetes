@@ -27,8 +27,8 @@ deploy:
         - mkdir -p ~/.ssh
         - chmod 700 ~/.ssh        
         - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-        - git config --global user.email "devops@mirantis.com"
-        - git config --global user.name "Mirantis DevOps"
+        - git config --global user.email "chomalkin@gmail.com"
+        - git config --global user.name "hyunsoo"
 
     script:
         - git clone ${CI_ARGOCD_GIT_REPO}
